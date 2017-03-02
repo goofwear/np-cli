@@ -2,7 +2,7 @@
   <library name="org.mozilla:rhino:1.7.7" type="repository">
     <properties maven-id="org.mozilla:rhino:1.7.7" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7/rhino-1.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rhino-1.7.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

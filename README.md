@@ -10,3 +10,4 @@ This app will print the streamlink to the first 720p, 360p 320p video it finds. 
 `wget $(java -jar GetNewPipe.jar <youtube video url>)`
 
 Clone this repository via `git clone --recoursive https://github.com/TeamNewPipe/np-cli.git`
+Than please use [jetbrains idea](https://www.jetbrains.com/idea/#chooseYourEdition) to compile this project.

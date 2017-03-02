@@ -2,7 +2,7 @@
   <library name="org.json:json:20160810" type="repository">
     <properties maven-id="org.json:json:20160810" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20160810/json-20160810.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-20160810.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
