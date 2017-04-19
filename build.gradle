@@ -20,9 +20,6 @@ repositories {
 }
 
 dependencies {
-    // This dependency is found on compile classpath of this component and consumers.
-    compile 'com.google.guava:guava:21.0'
-
     // NewPipeExtractor dependencies
     compile 'org.json:json:20160807'
     compile 'org.jsoup:jsoup:1.9.2'
