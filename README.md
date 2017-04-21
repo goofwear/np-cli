@@ -1,13 +1,29 @@
-NewPipe CLI
-===========
+# NewPipe CLI
 
-This is a small command line app demonstraiting how the [NewPipeExtractor](https://github.com/TeamNewPipe/NewPipeExtractor) works, and how it can be used for own purpouse.
+This is a small command line app demonstrating how the [NewPipeExtractor](https://github.com/TeamNewPipe/NewPipeExtractor) works, and how it can be used for own purpose.
 
-The GetUrlNewPipe.jar is the already compiled and packed version of this app. Use it like this:
-`java -jar GetUrlNewPipe.jar <youtube video url>`
+## Getting Started
 
-This app will print the streamlink to the first 720p, 360p 320p video it finds. So it can be used to download a video via wget like this:
-`wget $(java -jar GetNewPipe.jar <youtube video url>)`
+First clone this repository with:
 
-Clone this repository via `git clone --recoursive https://github.com/TeamNewPipe/np-cli.git`
-Than please use [jetbrains idea](https://www.jetbrains.com/idea/#chooseYourEdition) to compile this project.
+```
+git clone --recursive https://github.com/TeamNewPipe/np-cli.git
+```
+
+Then you can compile it with:
+
+```
+./gradlew build
+```
+
+It'll create a `np-cli.zip` in `build/distributions`. Extract it somewhere and open it's `bin` folder. You can run it with:
+
+```
+java -jar np-cli.jar <URL>
+```
+
+It'll print the first 320p, 720p, or 360p video it finds. So you can download a video using `wget` with:
+
+```
+wget $(java -jar np-cli.jar <URL>)
+```
