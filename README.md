@@ -16,14 +16,19 @@ Then you can compile it with:
 ./gradlew build
 ```
 
-It'll create a `np-cli.zip` in `build/distributions`. Extract it somewhere and open it's `bin` folder. You can run it with:
+It'll create a `np-cli.zip` in `build/distributions`. Extract it somewhere and open it's `bin` folder. Than you can run it with:
 
 ```
-java -jar np-cli.jar <URL>
+./np-cli <URL>
 ```
 
 It'll print the first 320p, 720p, or 360p video it finds. So you can download a video using `wget` with:
 
 ```
-wget $(java -jar np-cli.jar <URL>)
+wget $(./np-cli <URL>)
+```
+
+or you can play it using `vlc`:
+```
+vlc $(./np-cli <URL>)
 ```
