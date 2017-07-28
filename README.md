@@ -16,7 +16,7 @@ Then you can compile it with:
 ./gradlew build
 ```
 
-It'll create a `np-cli.zip` in `build/distributions`. Extract it somewhere and open it's `bin` folder. Than you can run it with:
+It'll create a `np-cli.zip` in `build/distributions`. Extract it somewhere and open it's `bin` folder. Then you can run it with:
 
 ```
 ./np-cli <URL>

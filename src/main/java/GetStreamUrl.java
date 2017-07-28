@@ -3,9 +3,9 @@ import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ReCaptchaException;
-import org.schabi.newpipe.extractor.stream_info.StreamExtractor;
-import org.schabi.newpipe.extractor.stream_info.StreamInfo;
-import org.schabi.newpipe.extractor.stream_info.VideoStream;
+import org.schabi.newpipe.extractor.stream.StreamExtractor;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
@@ -58,7 +58,7 @@ public class GetStreamUrl {
         NewPipe.init(initDownloader());
         try {
             StreamingService youtube = NewPipe.getService("Youtube");
-            StreamExtractor extractor = youtube.getExtractorInstance(url);
+            StreamExtractor extractor = youtube.getStreamExtractorInstance(url);
 
             // actual extraction
             StreamInfo streamInfo = StreamInfo.getVideoInfo(extractor);
